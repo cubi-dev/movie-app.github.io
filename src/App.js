@@ -15,7 +15,7 @@ function App() {
       <NavigationFC />
       {/* <IntroFC/> */}
       <Routes>
-        <Route path="/" element={<IntroFC />}></Route>
+        {/* <Route path="/" element={<IntroFC />}></Route> */}
         <Route path="/" element={<FilmFC />}></Route>
         <Route path="/detail/:id" element={<Detail />}></Route>
         {/* <Main/> */}
@@ -24,5 +24,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
