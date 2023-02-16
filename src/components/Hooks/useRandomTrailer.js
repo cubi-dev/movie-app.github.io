@@ -65,10 +65,17 @@ export default function useRandomTrailer() {
       trailer: "assets/videos/John Wick 2014.mp4",
       info: "An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took his car.",
     },
+    {
+      id: 10,
+      name: "The Batman",
+      release: "2022",
+      trailer: "assets/videos/THE BATMAN.mp4",
+      info: "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+    },
   ]);
 
   var min = 1;
-  var max = 9;
+  var max = 10;
 
   var randomVideoId = Math.floor(min + Math.random() * (max - min));
   // console.log(randomVideoId)
