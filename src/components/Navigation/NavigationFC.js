@@ -1,16 +1,20 @@
 import React, { useContext } from "react";
 import useRefMenu from "../Hooks/useRefMenu";
 import { ThemeContext } from "../ThemeContext";
+import { Link } from "react-router-dom";
 import "./Navigation.css";
 export default function NavigationFC() {
-  const {theme, toggle} = useContext(ThemeContext);
+  const { theme, toggle } = useContext(ThemeContext);
   const responseMenu = useRefMenu();
   return (
     <div>
-      <nav className="navigation" 
-      style={{
-        backgroundColor: theme.backgroundColor,  color: theme.color 
-      }}>
+      <nav
+        className="navigation"
+        style={{
+          backgroundColor: theme.backgroundColor,
+          color: theme.color,
+        }}
+      >
         {/* Đây là header*/}
         <div
           className="header-top"
@@ -19,58 +23,70 @@ export default function NavigationFC() {
           }}
         >
           <div className="container">
-            <a
-              href="index.html"
-              className="header-logo"
-              style={{ color: theme.color }}
-            >
-              B
-            </a>
+            <Link to={"/"}>
+              <a
+                href="index.html"
+                className="header-logo"
+                style={{ color: theme.color }}
+              >
+                B
+              </a>
+            </Link>
             <ul className="menu">
               <li className="menu-item">
-                <a
-                  href="#!"
-                  className="menu-link"
-                  style={{ color: theme.color }}
-                >
-                  Movies
-                </a>
+                <Link to={"/movies"}>
+                  <a
+                    href="#!"
+                    className="menu-link"
+                    style={{ color: theme.color }}
+                  >
+                    Movies
+                  </a>
+                </Link>
               </li>
               <li className="menu-item">
-                <a
-                  href="#!"
-                  className="menu-link"
-                  style={{ color: theme.color }}
-                >
-                  Category
-                </a>
+                <Link to={"/category"}>
+                  <a
+                    href="#!"
+                    className="menu-link"
+                    style={{ color: theme.color }}
+                  >
+                    Category
+                  </a>
+                </Link>
               </li>
               <li className="menu-item">
-                <a
-                  href="#!"
-                  className="menu-link"
-                  style={{ color: theme.color }}
-                >
-                  News
-                </a>
+                <Link to={"/news"}>
+                  <a
+                    href="#!"
+                    className="menu-link"
+                    style={{ color: theme.color }}
+                  >
+                    News
+                  </a>
+                </Link>
               </li>
               <li className="menu-item">
-                <a
-                  href="#!"
-                  className="menu-link"
-                  style={{ color: theme.color }}
-                >
-                  Plans
-                </a>
+                <Link to={"/plans"}>
+                  <a
+                    href="#!"
+                    className="menu-link"
+                    style={{ color: theme.color }}
+                  >
+                    Plans
+                  </a>
+                </Link>
               </li>
               <li className="menu-item">
-                <a
-                  href="#!"
-                  className="menu-link header-button btn btn--border btn--rounded"
-                  style={{ color: theme.color }}
-                >
-                  Login
-                </a>
+                <Link to={"/login"}>
+                  <a
+                    href="#!"
+                    className="menu-link header-button btn btn--border btn--rounded"
+                    style={{ color: theme.color }}
+                  >
+                    Login
+                  </a>
+                </Link>
               </li>
 
               {/* __________SEARCH BAR____________________________
@@ -100,21 +116,35 @@ _____________________________________________________*/}
               {/* _______________________________________________________________________ */}
             </ul>
             <button class="menu-toggle" ref={responseMenu}>
-              <span class="line line-first" style={{
-            backgroundColor: theme.color,
-          }}> </span>
-              <span class="line line-second" style={{
-            backgroundColor: theme.color,
-          }}> </span>
-
+              <span
+                class="line line-first"
+                style={{
+                  backgroundColor: theme.color,
+                }}
+              >
+                {" "}
+              </span>
+              <span
+                class="line line-second"
+                style={{
+                  backgroundColor: theme.color,
+                }}
+              >
+                {" "}
+              </span>
             </button>
           </div>
-          <img srcSet="assets/images/header-line2.png " alt="" className="header-line"></img>
+          <img
+            srcSet="assets/images/header-line2.png "
+            alt=""
+            className="header-line"
+          ></img>
         </div>
         <section
           className="banner"
           style={{
-            backgroundColor: theme.backgroundColor,  color: theme.color 
+            backgroundColor: theme.backgroundColor,
+            color: theme.color,
           }}
         >
           <div className="container">
@@ -124,12 +154,18 @@ _____________________________________________________*/}
               accessible for Everyone!
             </p>
             <div className="banner-buttons">
-              <a href="#!" className="btn btn--border btn--rounded"
-              style={{ color: theme.color }}>
+              <a
+                href="#!"
+                className="btn btn--border btn--rounded"
+                style={{ color: theme.color }}
+              >
                 Explore
               </a>
-              <a href="#!" className="btn btn--primary btn--rounded has-shadow"
-              style={{ color: theme.color }}>
+              <a
+                href="#!"
+                className="btn btn--primary btn--rounded has-shadow"
+                style={{ color: theme.color }}
+              >
                 Buy Plans
               </a>
             </div>
