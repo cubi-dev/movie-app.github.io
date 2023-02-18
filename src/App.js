@@ -2,7 +2,7 @@
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Detail from "./components/Detail/Detail";
+import Detail from "./components/Detail/DetailFC";
 import FilmFC from "./components/Film/FilmFC";
 import FooterFC from "./components/Footer/FooterFC";
 import IntroFC from "./components/Intro/IntroFC";

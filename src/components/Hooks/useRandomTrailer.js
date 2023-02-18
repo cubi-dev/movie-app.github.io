@@ -74,11 +74,11 @@ export default function useRandomTrailer() {
     },
   ]);
 
-  // var min = 1;
-  // var max = 10;
+  var min = 1;
+  var max = 10;
 
-  // var randomVideoId = Math.floor(min + Math.random() * (max - min));
-  var randomVideoId = trailers.id;
+  var randomVideoId = Math.floor(min + Math.random() * (max - min));
+  // var randomVideoId = trailers.id;
 
   // console.log(randomVideoId)
 
