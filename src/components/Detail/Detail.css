@@ -1,0 +1,14 @@
+.detail .container {
+  /* display: flex; */
+}
+
+@media screen and (max-width: 1023px) {
+
+}
+@media screen and (max-width: 767px) {
+     .intro {
+          height: 275px!important;
+          overflow: hidden;
+          padding: 20px;
+     }
+}

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { data } from "../../shared/ListOfFilm";
+import { ThemeContext } from "../ThemeContext";
 import "./Detail.css";
 export default function Detail() {
+  const { theme } = useContext(ThemeContext);
   const userName = useParams();
   const film = data.find((obj) => {
     return obj.id == userName.id;
@@ -10,7 +12,12 @@ export default function Detail() {
 
   return (
     <section className="detail">
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          backgroundColor: theme.backgroundColor,
+        }}
+      >
         <div className="intro">
           <div className="container">
             <div className="intro-first">
@@ -19,7 +26,7 @@ export default function Detail() {
                   className="intro-video"
                   autoPlay
                   muted
-                  src={film.trailer}
+                  src={`../${film.trailer}`}
                 ></video>
               </div>
               <div className="intro-info">
@@ -30,7 +37,7 @@ export default function Detail() {
           </div>
         </div>
         <div className="film-card">
-          <div className="film-name">{film.name}</div>
+          {/* <div className="film-name">{film.name}</div> */}
           <div className="product-tumb">
             <img src={`../${film.img}`} alt="" />
           </div>
