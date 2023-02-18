@@ -11,7 +11,10 @@ export default function Detail() {
   });
 
   return (
-    <section className="detail">
+    <section className="detail"
+    style={{
+      backgroundColor: theme.backgroundColor,
+    }}>
       <div
         className="container"
         style={{
