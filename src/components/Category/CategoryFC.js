@@ -41,9 +41,9 @@ export default function CategoryFC() {
           <div className="container">
                <div className="film-wrapper">
                     <div className="image">
-                    {/* <img src={`../${film.img}`} alt="" /> */}
+                    <img src={`../${film.img}`} alt="" />
                     </div>
-                    
+
                </div>
           </div>
         </section>
