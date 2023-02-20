@@ -88,6 +88,7 @@ export default function NavigationFC() {
             <ul className="menu">
               <li className="menu-item">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <Link to={"/movies"}>
                   <a
                     href="#!"
@@ -98,6 +99,8 @@ export default function NavigationFC() {
                   </a>
                 </Link>
 =======
+=======
+>>>>>>> parent of eacd76b (update)
                 <a
                   href="#!"
                   className="menu-link"
@@ -105,6 +108,9 @@ export default function NavigationFC() {
                 >
                   Movies
                 </a>
+<<<<<<< HEAD
+>>>>>>> parent of eacd76b (update)
+=======
 >>>>>>> parent of eacd76b (update)
               </li>
               <li className="menu-item">
@@ -117,6 +123,7 @@ export default function NavigationFC() {
                 </a>
               </li>
               <li className="menu-item">
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <Link to={"/news"}>
                   <a
@@ -139,6 +146,7 @@ export default function NavigationFC() {
                   </a>
                 </Link>
 =======
+=======
                 <a
                   href="#!"
                   className="menu-link"
@@ -148,8 +156,23 @@ export default function NavigationFC() {
                 </a>
               </li>
               <li className="menu-item">
+>>>>>>> parent of eacd76b (update)
                 <a
                   href="#!"
+                  className="menu-link"
+                  style={{ color: theme.color }}
+                >
+<<<<<<< HEAD
+                  News
+=======
+                  Plans
+>>>>>>> parent of eacd76b (update)
+                </a>
+              </li>
+              <li className="menu-item">
+                <a
+                  href="#!"
+<<<<<<< HEAD
                   className="menu-link"
                   style={{ color: theme.color }}
                 >
@@ -160,6 +183,8 @@ export default function NavigationFC() {
               <li className="menu-item">
                 <a
                   href="#!"
+=======
+>>>>>>> parent of eacd76b (update)
                   className="menu-link header-button btn btn--border btn--rounded"
                   style={{ color: theme.color }}
                 >
