@@ -11,14 +11,17 @@ export default function Detail() {
   });
 
   return (
-    <section className="detail"
-    style={{
-      backgroundColor: theme.backgroundColor,
-    }}>
+    <section
+      className="detail"
+      style={{
+        backgroundColor: theme.backgroundColor,
+      }}
+    >
       <div
         className="container"
         style={{
           backgroundColor: theme.backgroundColor,
+          borderBottom: theme.borderBottom,
         }}
       >
         <div className="intro">
@@ -39,16 +42,44 @@ export default function Detail() {
             </div>
           </div>
         </div>
-        <div className="film-card">
+        <div
+          className="detail-card"
+          style={{
+            color: theme.color,
+          }}
+        >
           {/* <div className="film-name">{film.name}</div> */}
-          <div className="product-img">
+          <div className="product-tumb">
             <img src={`../${film.img}`} alt="" />
           </div>
-          <div className="product-details">
-            <h4>{film.info}</h4>
-            <div className="product-price">{film.release}</div>
-            <p>{film.director}</p>
-            <div className="product-bottom-details"></div>
+          <div className="detail-info">
+            <div
+              className="detail-director"
+              style={{
+                borderBottom: theme.borderSmallBottom,
+              }}
+            >
+              <h1>Director:</h1>
+              <p>{film.director}</p>
+            </div>
+            <div
+              className="detail-writer"
+              style={{
+                borderBottom: theme.borderSmallBottom,
+              }}
+            >
+              <h1>Writer:</h1>
+              <p>{film.writer}</p>
+            </div>
+            <div
+              className="detail-stars"
+              style={{
+                borderBottom: theme.borderSmallBottom,
+              }}
+            >
+              <h1>Stars:</h1>
+              <p>{film.stars}</p>
+            </div>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ const themes = {
     paddingTop: "4rem", 
     borderTopColor: "white",
     borderBottom: "3px solid white",
+    borderSmallBottom: "1px solid white",
   },
   light: {
     backgroundColor: "#f8f3ed",
@@ -15,7 +16,7 @@ const themes = {
     borderBottomColor: "black", 
     paddingTop: "4rem", 
     borderTopColor: "white",
-    borderBottom: "3px solid black",
+    borderSmallBottom: "1px solid black",
   },
 };
 const initialState = {
