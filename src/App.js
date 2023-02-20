@@ -3,6 +3,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import CategoryFC from "./components/Category/CategoryFC";
+import ContactFC from "./components/Contact/ContactFC";
 import Detail from "./components/Detail/DetailFC";
 import FilmFC from "./components/Film/FilmFC";
 import FooterFC from "./components/Footer/FooterFC";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<FilmFC />}></Route>
         <Route path="/detail/:id" element={<Detail />}></Route>
         <Route path="/category" element={<CategoryFC />}></Route>
+        <Route path="/contact" element={<ContactFC/>}></Route>
         {/* <Main/> */}
       </Routes>
       <FooterFC />

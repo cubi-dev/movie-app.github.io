@@ -8,7 +8,7 @@ export default function CategoryFC() {
   const { theme } = useContext(ThemeContext);
   const userName = useParams();
   const film = data.find((obj) => {
-    return obj.id == userName.id;
+    return obj.id === userName.id;
   });
   return (
     <div
@@ -41,7 +41,8 @@ export default function CategoryFC() {
           <div className="container">
                <div className="film-wrapper">
                     <div className="image">
-                    <img src={`../${film.img}`} alt="" />
+                    {/* <img src={`../${film.img}`} alt="" /> */}
+
                     </div>
 
                </div>

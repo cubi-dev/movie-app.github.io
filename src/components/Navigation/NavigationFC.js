@@ -40,7 +40,7 @@ export default function NavigationFC() {
                     className="menu-link"
                     style={{ color: theme.color }}
                   >
-                    Movies
+                    News
                   </a>
                 </Link>
               </li>
@@ -62,7 +62,7 @@ export default function NavigationFC() {
                     className="menu-link"
                     style={{ color: theme.color }}
                   >
-                    News
+                    About
                   </a>
                 </Link>
               </li>
@@ -73,7 +73,7 @@ export default function NavigationFC() {
                     className="menu-link"
                     style={{ color: theme.color }}
                   >
-                    Plans
+                    Contact
                   </a>
                 </Link>
               </li>
