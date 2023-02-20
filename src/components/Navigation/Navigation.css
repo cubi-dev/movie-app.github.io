@@ -205,7 +205,7 @@ body {
 }
 
 .header-top {
-  /* position: fixed; */
+  position: fixed;
   /* padding: 3rem 0; */
   background-color: var(--primary-color);
   z-index: 99999;
