@@ -41,7 +41,7 @@ export default function Detail() {
         </div>
         <div className="film-card">
           {/* <div className="film-name">{film.name}</div> */}
-          <div className="product-tumb">
+          <div className="product-img">
             <img src={`../${film.img}`} alt="" />
           </div>
           <div className="product-details">
