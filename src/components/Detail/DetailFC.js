@@ -18,14 +18,14 @@ export default function Detail() {
       }}
     >
       <div
-        className="container"
+        className="containers"
         style={{
           backgroundColor: theme.backgroundColor,
           borderBottom: theme.borderBottom,
         }}
       >
         <div className="intro">
-          <div className="container">
+          <div className="containers">
             <div className="intro-first">
               <div className="intro-overlay">
                 <video

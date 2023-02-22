@@ -6,7 +6,7 @@ export default function IntroFC() {
   console.log(intros);
   return (
     <div className="intro">
-      <div className="container">
+      <div className="containers">
         {intros.map((intro) => (
           <div className="intro-first" key={intro.id}>
             {/* tai sao khi comment dong video thi may thong tin kia ko hien boi vi la thang map bat buoc phai

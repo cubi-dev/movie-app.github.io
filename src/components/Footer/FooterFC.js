@@ -13,7 +13,7 @@ export default function FooterFC() {
       }}
     >
       <div
-        className="container footer-container"
+        className="containers footer-container"
        
       >
         <div className="footer-item">

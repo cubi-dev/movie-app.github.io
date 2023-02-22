@@ -3,21 +3,23 @@ import "./Film.css";
 import { ThemeContext } from "../ThemeContext";
 import { Link } from "react-router-dom";
 import { data } from "../../shared/ListOfFilm";
+import IntroFC from "../Intro/IntroFC";
 export default function FilmFC() {
   const { theme } = useContext(ThemeContext);
   const [film, setFilm] = useState([]);
   return (
     <section
-      className="film"
-      style={{
-        backgroundColor: theme.backgroundColor,
-      }}
+    className="film"
+    style={{
+      backgroundColor: theme.backgroundColor,
+    }}
     >
+      <IntroFC></IntroFC>
       <h3 className="film-heading" style={{ color: theme.color }}>
         Recommend for you
       </h3>
       <div
-        className="container"
+        className="containers"
         style={{
           borderBottom: theme.borderBottom,
         }}

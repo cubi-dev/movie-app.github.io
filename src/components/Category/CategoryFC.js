@@ -18,7 +18,7 @@ export default function CategoryFC() {
         color: theme.color,
       }}
     >
-      <div className="container">
+      <div className="containers">
         <section
           className="banner"
           style={{
@@ -38,7 +38,7 @@ export default function CategoryFC() {
         </h1>
         {/* ______________________________ACTION - MOVIE______________________________ */}
         <section className="film-action">
-          <div className="container">
+          <div className="containers">
                <div className="film-wrapper">
                     <div className="image">
                     {/* <img src={`../${film.img}`} alt="" /> */}

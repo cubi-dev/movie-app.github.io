@@ -1,3 +1,10 @@
+.containers {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
 .film-heading {
   padding-top: 10rem;
   font-weight: 700;
@@ -6,7 +13,7 @@
 .film {
   /* margin-bottom: 4rem; */
 }
-.film > .container {
+.film > .containers {
   padding-top: 5rem;
   display: flex;
   align-items: stretch;
@@ -101,7 +108,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .film > .container {
+  .film > .containers {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
