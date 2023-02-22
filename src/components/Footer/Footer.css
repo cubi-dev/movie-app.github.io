@@ -1,3 +1,7 @@
+.footer {
+  margin-top: 60px;
+  /* height: 63vh; */
+}
 .containers {
   max-width: 1440px;
   margin: 0 auto;
@@ -18,7 +22,7 @@
    }
    .footer-link {
      color: #1f2b55;
-     font-size: 1.4rem;
+     font-size: 14px;
      display: block;
      margin-bottom: 3rem;
      width: fit-content;
@@ -28,7 +32,7 @@
    .footer-logo {
      text-decoration: none;
      color: inherit;
-     font-size: 6rem;
+     font-size: 3rem;
      font-weight: 700;
    }
 @media screen and (max-width: 500px) {

@@ -10,6 +10,7 @@ export default function NavigationFC() {
   const { theme, toggle } = useContext(ThemeContext);
   // const responseMenu = useRefMenu();
   return (
+    // _______________________________________________________________________________________________________________________
     <div className="navigation-header"  style={{backgroundColor: theme.backgroundColor, borderBottomColor: theme.borderBottomColor, color: theme.color}}>
     <Navbar  style={{backgroundColor: theme.backgroundColor, borderBottomColor: theme.borderBottomColor}}
     alignLinks="right"
@@ -27,11 +28,11 @@ export default function NavigationFC() {
     }}
     >
       <div className="navigation-item" style={{backgroundColor: theme.backgroundColor, color: theme.color}}>
-      <Link to={"/"} style= {{color: theme.color}}>
       <NavItem>
+      <Link to={"/"} style= {{color: theme.color}}>
         Home
-      </NavItem>
       </Link>
+      </NavItem>
       <NavItem>
         <Link to={"/category"} style= {{color: theme.color}}>Category</Link>
       </NavItem>
@@ -50,6 +51,7 @@ export default function NavigationFC() {
     </Navbar>
     </div>
     );
+    // __________________________________________________________________________________________________________________________________
   }
   // __________________________________________OLD VERSION___________________________________________
   //     <div>

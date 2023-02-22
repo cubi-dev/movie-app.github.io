@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
+import { Container, Footer } from "react-materialize";
 import { ThemeContext } from "../ThemeContext";
 import "./Footer.css";
 export default function FooterFC() {
   const {theme} = useContext(ThemeContext);
 
   return (
-    <footer
+    <section
       className="footer"
       style={{
         backgroundColor: theme.backgroundColor,
@@ -116,6 +117,6 @@ export default function FooterFC() {
           </a>
         </div>
       </div>
-    </footer>
+    </section>
   );
 }
