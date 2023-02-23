@@ -3,6 +3,7 @@ import { Container, Tab, Tabs } from 'react-materialize'
 import "./News.css";
 import { ThemeContext } from "../ThemeContext";
 import { useContext } from "react";
+import { Daily } from '../../shared/ListOfNew';
 export default function NewsFC() {
      const { theme } = useContext(ThemeContext);
   return (
@@ -18,20 +19,24 @@ export default function NewsFC() {
          responsiveThreshold: Infinity,
          swipeable: false
        }}
-       title="Test 1"
+       title="DAILY NEWS"
      >
+      <Container>
+        {Daily.map((daily)=>(
       <div className='news-card'>
        <div className='news-card-container'>
           <div className='news-card-img'>
-               IMG
+               <img src= {daily.img}></img>
           </div>
           <div className='news-card-content'>
-               <h1 className='news-cart-title'>News</h1>
-               <p className='news-cart-release'>Release</p>
-               <p className='news-cart-info'>Cubi</p>
+               <h1 className='news-cart-title'>{daily.name}</h1>
+               <p className='news-cart-release'>{daily.release}</p>
+               <p className='news-cart-info'>{daily.info}</p>
           </div>
        </div>
       </div>
+        ))}
+      </Container>
      </Tab>
      <Tab
        active
