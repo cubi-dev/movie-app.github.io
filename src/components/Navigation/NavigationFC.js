@@ -12,7 +12,7 @@ export default function NavigationFC() {
   return (
     // _______________________________________________________________________________________________________________________
     <div className="navigation-header"  style={{backgroundColor: theme.backgroundColor, borderBottomColor: theme.borderBottomColor, color: theme.color}}>
-    <Navbar  style={{backgroundColor: theme.backgroundColor, borderBottomColor: theme.borderBottomColor}}
+    <Navbar className="navigation-nav"  style={{backgroundColor: theme.backgroundColor, borderBottomColor: theme.borderBottomColor}}
     alignLinks="right"
     brand={<Link style={{color: theme.color, textAlign: "start", fontWeight: "bold"}} className="brand-logo">B</Link>}
     id = "mobile-nav"
@@ -31,6 +31,11 @@ export default function NavigationFC() {
       <NavItem>
       <Link to={"/"} style= {{color: theme.color}}>
         Home
+      </Link>
+      </NavItem>
+      <NavItem>
+      <Link to={"/news"} style= {{color: theme.color}}>
+        News
       </Link>
       </NavItem>
       <NavItem>

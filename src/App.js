@@ -12,6 +12,7 @@ import FooterFC from "./components/Footer/FooterFC";
 import IntroFC from "./components/Intro/IntroFC";
 // import Main from './components/Main';
 import NavigationFC from "./components/Navigation/NavigationFC";
+import NewsFC from "./components/News/NewsFC";
 
 import { ThemeContext } from "./components/ThemeContext";
 // import { Button } from "@material-ui/core";
@@ -28,6 +29,7 @@ function App() {
         <Route path="/category" element={<CategoryFC />}></Route>
         <Route path="/contact" element={<ContactFC/>}></Route>
         <Route path="/about" element={<AboutFC/>}></Route>
+        <Route path="/news" element={<NewsFC/>}></Route>
         {/* <Main/> */}
       </Routes>
       <FooterFC />

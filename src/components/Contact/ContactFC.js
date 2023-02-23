@@ -1,8 +1,9 @@
 import React from "react";
-import { Container, TextInput } from "react-materialize";
+import { Container, TextInput, Button } from "react-materialize";
 import "./Contact.css";
 import { ThemeContext } from "../ThemeContext";
 import { useContext } from "react";
+import { pink } from "@material-ui/core/colors";
 export default function ContactFC() {
   const { theme } = useContext(ThemeContext);
   return (
@@ -34,6 +35,17 @@ export default function ContactFC() {
           label="Input message"
           style={{ color: theme.color }}
         />
+        <Button
+          node="button"
+          style={{
+            backgroundColor: "red",
+            textAlign: "center",
+            borderRadius: "5px"
+          }}
+          waves="light"
+        >
+          SUBMIT
+        </Button>
       </Container>
     </div>
   );
