@@ -19,7 +19,7 @@ import { ThemeContext } from "./components/ThemeContext";
 function App() {
   const {theme} = useContext(ThemeContext);
   return (
-    <div className="App" style={{ backgroundColor: theme.backgroundColor, }}>
+    <div className="App" style={{ backgroundColor: theme.backgroundColor, color: theme.color}}>
       <NavigationFC />
       {/* <IntroFC/> */}
       <Routes>

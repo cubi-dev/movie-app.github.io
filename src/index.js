@@ -6,15 +6,24 @@ import reportWebVitals from "./reportWebVitals";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { ThemeProvider } from "./components/ThemeContext";
 import { BrowserRouter } from "react-router-dom";
-import M from 'materialize-css'
-import 'materialize-css/dist/css/materialize.min.css'
-
+import M from "materialize-css";
+import "materialize-css/dist/css/materialize.min.css";
+import { configureStore } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
+import contactReducer from "./components/features/Contacts"
+export const store = configureStore({
+  reducer: {
+    contacts: contactReducer,
+  },
+});
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
       <BrowserRouter>
+      <Provider store={store}>
         <App />
+      </Provider>
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>

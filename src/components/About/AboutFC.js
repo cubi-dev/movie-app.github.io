@@ -17,10 +17,9 @@ export default function AboutFC() {
                 <CollapsibleItem 
                     expanded={false}
                     header="Fun! Watch Movies & TV Shows Online for FREE on B (Bi's film)"
-                    style={{ fontWeight: 'bold',}}
+                    style={{ fontWeight: 'bold', color: "black"}}
                     icon={<Icon><i class="fa-solid fa-face-smile"></i></Icon>}
                     node="div"
-                    
                 >
                     <p style={{ fontWeight: 'normal', color: theme.color }}>
                         Do you love movies and tv series? Do you want to watch them for free online, but don't know how? Well, look no further. B is a website that allows users to watch tv series and movies for free on their computers, laptops, tablets or smartphones.
@@ -31,7 +30,7 @@ export default function AboutFC() {
                 <CollapsibleItem
                     expanded={false}
                     header="What is B?"
-                    style={{ fontWeight: 'bold'}}
+                    style={{ fontWeight: 'bold', color: "black"}}
                     icon={<Icon><i class="fa-regular fa-user"></i></Icon>}
                     node="div"
                 >
@@ -44,7 +43,7 @@ export default function AboutFC() {
                     expanded={false}
                     header="FREE to Use"
                     icon={<Icon><i class="fa-solid fa-heart"></i></Icon>}
-                    style={{ fontWeight: 'bold' }}
+                    style={{ fontWeight: 'bold', color: "black"}}
 
                     node="div"
                 >
@@ -56,7 +55,7 @@ export default function AboutFC() {
                     expanded={false}
                     header="Best for Movies and TV Series Lovers"
                     icon={<Icon><i class="fa-solid fa-film"></i></Icon>}
-                    style={{ fontWeight: 'bold' }}
+                    style={{ fontWeight: 'bold', color: "black"}}
 
                     node="div"
                 >
@@ -69,7 +68,7 @@ export default function AboutFC() {
                     expanded={false}
                     header="No Disturbing Ads"
                     icon={<Icon><i class="fa-solid fa-rectangle-ad"></i></Icon>}
-                    style={{ fontWeight: 'bold' }}
+                    style={{ fontWeight: 'bold', color: "black"}}
 
                     node="div"
                 >
@@ -83,7 +82,7 @@ export default function AboutFC() {
                     expanded={false}
                     header="Safe and Secure"
                     icon={<Icon><i class="fa-solid fa-regular fa-lock"></i></Icon>}
-                    style={{ fontWeight: 'bold' }}
+                    style={{ fontWeight: 'bold', color: "black"}}
 
                     node="div"
                 >

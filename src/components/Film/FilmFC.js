@@ -25,11 +25,11 @@ export default function FilmFC() {
         }}
       >
         {data.map((film) => (
-          <div className="film-column" key={film.id}>
+          <div className="film-column" key={film.id} style={{ color: theme.color }}>
             <div className="film-card">
               <img src={film.img} alt="" className="film-image" />
-              <h3 className="film-name">{film.name}</h3>
-              <p className="film-release">{film.release}</p>
+              <h3 className="film-name"  style={{ color: "black" }}>{film.name}</h3>
+              <p className="film-release"  style={{ color: "black" }}>{film.release}</p>
               <p className="film-detail">
                 <Link to={`detail/${film.id}`}>
                   <button>
