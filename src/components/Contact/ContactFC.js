@@ -22,6 +22,7 @@ import { useState } from "react";
 import { addContact } from "../features/Contacts";
 import { useDispatch } from "react-redux";
 import Contacts from "./Contacts";
+import { v4 as uuidv4 } from "uuid";
 // ALERT
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -49,6 +50,17 @@ export default function ContactFC() {
     },
     onSubmit: (values) => {
       setOpen(true);
+      dispatch(
+        addContact({
+          id: uuidv4(),
+          name: formik.values.name,
+          message: formik.values.message,
+          email: formik.values.email,
+          phone: formik.values.phone,
+          program: formik.values.program,
+          agree: formik.values.agree,
+        })
+      );
       formik.resetForm();
     },
     validationSchema: Yup.object({
@@ -79,12 +91,20 @@ export default function ContactFC() {
   return (
     <div
       className="contact"
-      style={{ color: theme.color, backgroundColor: theme.backgroundColor,borderBottom: theme.borderBottomColor}}
+      style={{
+        color: theme.color,
+        backgroundColor: theme.backgroundColor,
+        borderBottom: theme.borderBottomColor,
+      }}
     >
       <Container maxWidth="md">
         <form
           onSubmit={formik.handleSubmit}
-          style={{ display: "flex", flexDirection: "column", borderBottom: theme.borderBottomColor }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            borderBottom: theme.borderBottomColor,
+          }}
         >
           <h1
             style={{
@@ -158,7 +178,6 @@ export default function ContactFC() {
             sx={(theme) => ({
               color: theme.color,
             })}
-            
           />
           {formik.errors.phone && formik.touched.phone && (
             <Typography
@@ -275,10 +294,12 @@ export default function ContactFC() {
               color: theme.color,
             })}
           />
-          <Button variant="container" type="submit"
-          onClick={()=> {
-            dispatch(addContact({id: 0, name: name, email: email, phone: phone, program: program, message: message, agree: agree}));
-          }}
+          <Button
+            variant="container"
+            type="submit"
+            onClick={() => {
+              // dispatch(addContact({id: 0, name: name, email: email, phone: phone, program: program, message: message, agree: agree}));
+            }}
           >
             Send
           </Button>
