@@ -4,6 +4,7 @@ import {
   ListItem,
   ListItemText,
 } from "@material-ui/core";
+import { useContext } from "react";
 import { TextInput } from "react-materialize";
 import { Button } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -12,7 +13,10 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { deleteContact, updateContact } from "../features/Contacts";
+import { ThemeContext } from "../ThemeContext";
+import { style } from "@mui/system";
 export default function Contacts() {
+  const { theme } = useContext(ThemeContext);
   const dispatch = useDispatch();
   const contactList = useSelector((state) => state.contacts.value);
   const [newContact, setNewContact] = useState("");
@@ -26,13 +30,14 @@ export default function Contacts() {
             display: "flex",
             flexDirection: "column",
             alignItems: "start",
+            color: "black", backgroundColor: "white" , 
           }}
         >
           <ListItemText
             primary={contact.name}
             secondary={[contact.message]}
             children={[contact.email, contact.phone, contact.agree]}
-          />
+         />
           <div style={{ width: "100%" }}>
             <TextInput
               label="Type new message...."

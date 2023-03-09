@@ -104,6 +104,7 @@ export default function ContactFC() {
             display: "flex",
             flexDirection: "column",
             borderBottom: theme.borderBottomColor,
+            color: theme.color, 
           }}
         >
           <h1
